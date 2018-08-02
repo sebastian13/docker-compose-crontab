@@ -4,5 +4,6 @@ services:
   crontab:
     image: rancher/container-crontab:v0.5.0
     container_name: crontab
+    restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
